@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Foot } from "../footer/foot";
-import { FormContext } from "./FormContext";
-// import FormContext from "./FormContext.jsx";
+import FormContext from "./FormContext";
+
 
 
 const Formulaire = () => {
