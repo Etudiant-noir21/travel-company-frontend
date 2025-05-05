@@ -10,7 +10,7 @@ import AuthContext from "./UseContext";
 
 const Login = () => {
 	const { formData, updateFormData, resetFormData } = useContext(FormContext);
-	const { fetchProfil } = useContext(AuthContext);
+	const { fetchProfil,url } = useContext(AuthContext);
 	const navigate = useNavigate();
 
 	const handleChange = (e) => {
@@ -22,7 +22,7 @@ const Login = () => {
 		e.preventDefault();
 
 		try {
-			const response = await fetch("http://localhost:3700/api/users/login", {
+			const response = await fetch(`${url}/api/users/login`, {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",

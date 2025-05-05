@@ -15,7 +15,7 @@ export const AuthProvider = ({ children }) => {
     if (!token) return;
 
     try {
-      const response = await fetch("http://localhost:3700/api/users/profile", {
+      const response = await fetch("https://travel-backend-gzpr.onrender.com/api/users/profile", {
         headers: {
           Authorization: `Bearer ${token}`,
         },

@@ -3,19 +3,21 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.min.js";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import MonAccueil from "./FirstPage";
+import MonAccueil from "./firstPage.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LesVols from "./ListesVol";
-import Reservation from "./Reservation";
-import Details from "./AfficheDetaiils";
+import LesVols from "./listesVol.jsx";
+import Reservation from "./reservation.jsx";
+import Details from "./afficheDetaiils.jsx";
 import Formulaire from "./Components/Formulaires/Formulaire";
 import Login from "./Components/Formulaires/Login";
 import { Reservations } from "./Components/Reservations/Reservations";
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
 import { AuthProvider } from "./Components/Formulaires/UseContext.jsx";
-import { FormProvider } from "./Components/formulaires/FormContext";
 import { ReservationProvider } from "./components/ReservationProvider.jsx";
-import { BilletReservation } from "./Components/BilletReservation/BilletReservation.jsx";
+// import { BilletReservation } from "./Components/BilletReservation/BilletReservation.jsx";
+import Navbar from "./components/Navbar.jsx";
+import { FormProvider } from "./Components/Formulaires/FormContext.jsx";
+import { BilletReservation } from "./components/billetReservation/billetReservation.jsx";
 
 function App() {
 	return (
