@@ -5,16 +5,14 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import MonAccueil from "./acceuil.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LesVols from "./listesVol.jsx";
+import LesVols from "./listesVol.jsx"
 import Reservation from "./reservation.jsx";
 import Details from "./afficheDetaiils.jsx";
 import Formulaire from "./components/formulaires/formulaire";
 import Login from "./components/formulaires/login";
 import { Reservations } from "./components/reservations/reservations";
-// import { AuthProvider } from "./components/cormulaires/useContext.jsx";
 import { ReservationProvider } from "./components/reservationProvider.jsx";
-import Navbar from "./components/Navbar.jsx";
-// import { FormProvider } from "./components/cormulaires/formContext.jsx";
+import Navbar from "./components/navbar.jsx";
 import { BilletReservation } from "./components/billetReservation/billetReservation.jsx";
 import { AuthProvider } from "./Components/formulaires/useContext.jsx";
 import { FormProvider } from "./components/formulaires/FormContext.jsx";
