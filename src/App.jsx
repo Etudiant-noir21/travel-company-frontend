@@ -11,10 +11,8 @@ import Details from "./afficheDetaiils.jsx";
 import Formulaire from "./Components/Formulaires/Formulaire";
 import Login from "./Components/Formulaires/Login";
 import { Reservations } from "./Components/Reservations/Reservations";
-// import Navbar from "./Components/Navbar";
 import { AuthProvider } from "./Components/Formulaires/UseContext.jsx";
 import { ReservationProvider } from "./components/ReservationProvider.jsx";
-// import { BilletReservation } from "./Components/BilletReservation/BilletReservation.jsx";
 import Navbar from "./components/Navbar.jsx";
 import { FormProvider } from "./Components/Formulaires/FormContext.jsx";
 import { BilletReservation } from "./components/billetReservation/billetReservation.jsx";
@@ -29,7 +27,7 @@ function App() {
 						<BrowserRouter>
 							<Navbar />
 							<Routes>
-								<Route path="/" element={<MonAccueil />} />
+								<Route path="/" element={<MonAccueil/>} />
 								<Route path="/ListesVol" element={<LesVols />} />
 								<Route path="/Reservation" element={<Reservation />} />
 								<Route path="/AfficheDetaiils/:id" element={<Details />} />

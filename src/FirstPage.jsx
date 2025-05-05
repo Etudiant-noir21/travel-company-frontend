@@ -1,9 +1,10 @@
-import Decouvertes from "./components/Decouvertes/decouvertes";
-import Footer from "./Components/Footer/footer";
-import RechercheVols from "./Components/rechercheVol/rechercheVol";
-import MainTravel from "./Components/MainTravel";
+import Decouvertes from "./components/decouvertes/decouvertes";
+import Footer from "./components/footer/footer";
+import RechercheVols from "./components/rechercheVol/rechercheVol";
+import MainTravel from "./components/mainTravel";
 import useAffichageVols from "./Components/useVols";
-import Vols from "./Components/travelCard/vols";
+import Vols from "./components/travelCard/vols";
+// import Vols from "./Components/travelCard/vols";
 
 const MonAccueil = () => {
 	const { vols } = useAffichageVols(3);
