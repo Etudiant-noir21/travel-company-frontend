@@ -5,7 +5,6 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import MonAccueil from "./acceuil.jsx";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LesVols from "./listesVol.jsx"
 import Reservation from "./reservation.jsx";
 import Details from "./afficheDetaiils.jsx";
 import Formulaire from "./components/formulaires/formulaire";
@@ -16,6 +15,7 @@ import Navbar from "./components/navbar.jsx";
 import { BilletReservation } from "./components/billetReservation/billetReservation.jsx";
 import { AuthProvider } from "./Components/formulaires/useContext.jsx";
 import { FormProvider } from "./components/formulaires/FormContext.jsx";
+import Lesvols from "./ListesVol.jsx";
 
 function App() {
 	return (
@@ -28,7 +28,7 @@ function App() {
 							<Navbar />
 							<Routes>
 								<Route path="/" element={<MonAccueil/>} />
-								<Route path="/ListesVol" element={<LesVols />} />
+								<Route path="/ListesVol" element={<Lesvols />} />
 								<Route path="/Reservation" element={<Reservation />} />
 								<Route path="/AfficheDetaiils/:id" element={<Details />} />
 								<Route path="/inscription" element={<Formulaire />} />

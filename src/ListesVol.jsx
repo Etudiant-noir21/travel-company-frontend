@@ -1,4 +1,3 @@
-// import Foot from "./components/footer/foot";
 import { Foot } from "./components/footer/foot.jsx";
 import InputSearch from "./components/InputSearch.jsx";
 import { useLocation } from "react-router-dom";
@@ -6,7 +5,7 @@ import useAffichageVols from "./components/useVols.jsx";
 import RechercheVols from "./components/rechercheVol/rechercheVol.jsx";
 import Vols from "./components/travelCard/vols.jsx";
 
-const LesVols = () => {
+const Lesvols = () => {
 	const { search } = useLocation();
 	const parametres = new URLSearchParams(search);
 
@@ -57,4 +56,4 @@ const LesVols = () => {
 	);
 };
 
-export default LesVols;
+export default Lesvols;
