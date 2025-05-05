@@ -1,5 +1,5 @@
-import MaReservation from "./Components/maReservation/reservation";
-import './Components/maReservation/reservation.css'
+import MaReservation from "./components/maReservation/reservation.jsx";
+import './components/maReservation/reservation.css'
 
 
 const Reservation = () => {

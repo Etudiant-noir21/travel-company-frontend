@@ -8,13 +8,13 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LesVols from "./listesVol.jsx";
 import Reservation from "./reservation.jsx";
 import Details from "./afficheDetaiils.jsx";
-import Formulaire from "./components/formulaires/Formulaire";
-import Login from "./components/formulaires/Login";
-import { Reservations } from "./components/reservations/Reservations";
-import { AuthProvider } from "./components/cormulaires/UseContext.jsx";
+import Formulaire from "./components/formulaires/formulaire";
+import Login from "./components/formulaires/login";
+import { Reservations } from "./components/reservations/reservations";
+import { AuthProvider } from "./components/cormulaires/useContext.jsx";
 import { ReservationProvider } from "./components/reservationProvider.jsx";
 import Navbar from "./components/Navbar.jsx";
-import { FormProvider } from "./components/cormulaires/FormContext.jsx";
+import { FormProvider } from "./components/cormulaires/formContext.jsx";
 import { BilletReservation } from "./components/billetReservation/billetReservation.jsx";
 
 function App() {

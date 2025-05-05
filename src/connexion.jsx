@@ -1,5 +1,5 @@
-import Connection from "./Components/connectionFormulaire/Connection";
-import Foot from "./Components/Footer/foot";
+import Connection from "./components/connectionFormulaire/connection.jsx";
+import Foot from "./components/footer/foot.jsx";
 
 const ConnexionPage = () => {
     return ( 

@@ -1,10 +1,10 @@
 // import Foot from "./components/footer/foot";
-import { Foot } from "./components/footer/foot";
-import InputSearch from "./components/InputSearch";
+import { Foot } from "./components/footer/foot.jsx";
+import InputSearch from "./components/InputSearch.jsx";
 import { useLocation } from "react-router-dom";
-import useAffichageVols from "./Components/useVols";
-import RechercheVols from "./Components/rechercheVol/rechercheVol";
-import Vols from "./Components/travelCard/vols";
+import useAffichageVols from "./components/useVols.jsx";
+import RechercheVols from "./components/rechercheVol/rechercheVol.jsx";
+import Vols from "./components/travelCard/vols.jsx";
 
 const LesVols = () => {
 	const { search } = useLocation();

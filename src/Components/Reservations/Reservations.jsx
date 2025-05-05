@@ -1,7 +1,8 @@
 import { useContext, useEffect, useState } from "react";
-import AuthContext from "../Formulaires/UseContext";
-import "./Reservation.css";
+// import AuthContext from "../formulaires/useContext.jsx";
+import "./reservation.css";
 import { useNavigate } from "react-router-dom";
+import AuthContext from "../formulaires/useContext.jsx";
 
 export const Reservations = () => {
 	// infos personnels reservation
@@ -89,15 +90,7 @@ export const Reservations = () => {
 				JSON.stringify(reservationData)
 			);
 			navigation("/pdfbillets", { state: { reservationData } });
-			// navigation("/pdfbillets", {
-			//   state: {
-			//     reservationData: {
-			//       ...reservation,
-			//       ...infosVols,
-			//       id: resultats.id // Ajout de l'ID de la réservation
-			//     }
-			//   }
-			// });
+			
 		} catch (err) {
 			console.error("Erreur lors de l'envoi des données", err.message);
 		}

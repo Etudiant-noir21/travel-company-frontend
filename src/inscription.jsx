@@ -1,12 +1,11 @@
-import Foot from "./Components/Footer/foot";
-import Formulaire from "./components/Formulaire/Formulaire";
+import Foot from "./components/footer/foot.jsx";
+import Formulaire from "./components/formulaire/formulaire.jsx";
 
 const Inscription = () => {
     return ( 
         <div>
             <Formulaire />
             <Foot />
-            {/* <Foot /> */}
         </div>
      );
 }

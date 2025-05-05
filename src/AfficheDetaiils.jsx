@@ -1,4 +1,4 @@
-import DetailsVols from "./components/DetailsVols/details";
+import DetailsVols from "./components/detailsVols/details.jsx";
 import { Foot } from "./components/footer/foot";
 // import Foot from "./components/footer/foot";
 
