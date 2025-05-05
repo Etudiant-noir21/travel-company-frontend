@@ -11,13 +11,11 @@ import Details from "./AfficheDetaiils";
 import Formulaire from "./Components/Formulaires/Formulaire";
 import Login from "./Components/Formulaires/Login";
 import { Reservations } from "./Components/Reservations/Reservations";
-import { BilletReservation } from "./components/BilletReservation/BilletsReserve";
 import Navbar from "./Components/Navbar";
-import { AuthProvider } from "./Components/Formulaires/AuthContext";
+import { AuthProvider } from "./Components/Formulaires/UseContext.jsx";
 import { FormProvider } from "./Components/formulaires/FormContext";
-import { ReservationProvider } from "./components/ReservationContext";
-// import { ReservationProvider } from "./components/ReservationContext";
-// import Vols from "./Components/travelCard/vols";
+import { ReservationProvider } from "./components/ReservationProvider.jsx";
+import { BilletReservation } from "./Components/BilletReservation/BilletReservation.jsx";
 
 function App() {
 	return (

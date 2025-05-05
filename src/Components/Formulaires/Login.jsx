@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { Foot } from "../footer/foot";
 import FormContext from "./FormContext";
-import AuthContext from "./AuthContext";
+import AuthContext from "./UseContext";
 
 const Login = () => {
 	const { formData, updateFormData, resetFormData } = useContext(FormContext);
