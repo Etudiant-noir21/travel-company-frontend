@@ -5,8 +5,9 @@ import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { Foot } from "../footer/foot";
-import FormContext from "./FormContext";
-import AuthContext from "./UseContext";
+// import FormContext from "./FormContext";
+import AuthContext from "./useContext.jsx";
+import FormContext from "./formContext.jsx";
 
 const Login = () => {
 	const { formData, updateFormData, resetFormData } = useContext(FormContext);

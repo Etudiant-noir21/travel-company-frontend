@@ -1,8 +1,8 @@
 import "./details.css";
 import { useNavigate, useParams } from "react-router-dom";
 import { useContext, useEffect, useState } from "react";
-import AuthContext from "../Formulaires/UseContext";
-import { useReservation } from "../ReservationProvider";
+import AuthContext from "../formulaires/useContext.jsx";
+import { useReservation } from "../reservationProvider.jsx";
 
 const DetailsVols = () => {
 	const { id } = useParams();
