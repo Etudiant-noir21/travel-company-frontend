@@ -9,7 +9,9 @@
     border-bottom: 1px solid #040265 !important;
     font-family: "Roboto", sans-serif;
     padding: 10px 0 !important;
-    position: fixed;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     z-index: 100;
     width: 100%;
 }

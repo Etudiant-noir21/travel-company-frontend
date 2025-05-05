@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 import { Foot } from "../footer/foot";
 import AuthContext from "./useContext";
-import FormContext from "./formContext";
+import FormContext from "./FormContext";
 
 
 const Login = () => {

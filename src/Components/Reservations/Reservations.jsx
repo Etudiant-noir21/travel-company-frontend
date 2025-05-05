@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from "react";
 // import AuthContext from "../formulaires/useContext.jsx";
 import "./reservation.css";
 import { useNavigate } from "react-router-dom";
-import AuthContext from "../formulaires/useContext.jsx";
+import AuthContext from "../formulaires/useContext";
 
 export const Reservations = () => {
 	// infos personnels reservation
