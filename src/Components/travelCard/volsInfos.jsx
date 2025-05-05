@@ -11,10 +11,11 @@ const VolsInfos = ({
   arrivePays,
   arriveHeure,
   id,
-  placesDisponibles
+  placesDisponibles,
+  
 }) => {
   return (
-    <Link to={`/AfficheDetaiils/${id}`}>
+    <Link to={`/AfficheDetaiils/${id}`} >
     <div className="row flex-column flex-md-row mb-4 border lashadow p-1">
       <div className="col-12 col-md-10 row align-items-center justify-content-around gap-2 border-end border-5 m-0 p-0 p-md-0">
         <div className="col-12">

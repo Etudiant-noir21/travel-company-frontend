@@ -1,10 +1,10 @@
 // import Foot from "./components/footer/foot";
 import { Foot } from "./components/footer/foot";
 import InputSearch from "./components/InputSearch";
-import RechercheVols from "./components/rechercheVol/rechercheVol";
-import Vols from "./components/TravelCard/vols";
-import useAffichageVols from "./components/useVols";
 import { useLocation } from "react-router-dom";
+import useAffichageVols from "./Components/useVols";
+import RechercheVols from "./Components/rechercheVol/rechercheVol";
+import Vols from "./Components/travelCard/vols";
 
 const LesVols = () => {
 	const { search } = useLocation();
@@ -43,8 +43,7 @@ const LesVols = () => {
 		<div className="lareserve">
 			<InputSearch />
 			<RechercheVols />
-			{/* <Vols tableau={monFilter} /> */}
-			{/* <Vols tableau={monFilter} /> */}
+		
 			{monFilter.length === 0 ? (
 				<p style={{ textAlign: "center", marginTop: "2rem" }}>
 					Aucun Vol Trouver ou Rechercher

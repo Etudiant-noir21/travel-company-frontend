@@ -8,30 +8,40 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LesVols from "./ListesVol";
 import Reservation from "./Reservation";
 import Details from "./AfficheDetaiils";
-import Formulaire from "./Components/formulaires/Formulaire";
-import Login from "./Components/formulaires/Login";
-import { Reservations } from "./components/Reservations/Reservations";
+import Formulaire from "./Components/Formulaires/Formulaire";
+import Login from "./Components/Formulaires/Login";
+import { Reservations } from "./Components/Reservations/Reservations";
 import { BilletReservation } from "./components/BilletReservation/BilletsReserve";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
+import { AuthProvider } from "./Components/Formulaires/AuthContext";
+import { FormProvider } from "./Components/formulaires/FormContext";
+import { ReservationProvider } from "./components/ReservationContext";
+// import { ReservationProvider } from "./components/ReservationContext";
 // import Vols from "./Components/travelCard/vols";
 
 function App() {
 	return (
 		<>
-			<ToastContainer position="top-right" autoClose={3000} />
-			<BrowserRouter>
-				<Navbar />
-				<Routes>
-					<Route path="/" element={<MonAccueil />} />
-					<Route path="/ListesVol" element={<LesVols />} />
-					<Route path="/Reservation" element={<Reservation />} />
-					<Route path="/AfficheDetaiils/:id" element={<Details />} />
-					<Route path="/inscription" element={<Formulaire />} />
-					<Route path="/Login" element={<Login />} />
-					<Route path="/Reservations" element={<Reservations />} />
-					<Route path="/pdfbillets" element={<BilletReservation />} />
-				</Routes>
-			</BrowserRouter>
+			<AuthProvider>
+				<FormProvider>
+					<ReservationProvider>
+						<ToastContainer position="top-right" autoClose={3000} />
+						<BrowserRouter>
+							<Navbar />
+							<Routes>
+								<Route path="/" element={<MonAccueil />} />
+								<Route path="/ListesVol" element={<LesVols />} />
+								<Route path="/Reservation" element={<Reservation />} />
+								<Route path="/AfficheDetaiils/:id" element={<Details />} />
+								<Route path="/inscription" element={<Formulaire />} />
+								<Route path="/Login" element={<Login />} />
+								<Route path="/Reservations" element={<Reservations />} />
+								<Route path="/pdfbillets" element={<BilletReservation />} />
+							</Routes>
+						</BrowserRouter>
+					</ReservationProvider>
+				</FormProvider>
+			</AuthProvider>
 		</>
 	);
 }

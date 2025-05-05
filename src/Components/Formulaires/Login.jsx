@@ -7,7 +7,6 @@ import { Link } from "react-router-dom";
 import { Foot } from "../footer/foot";
 import FormContext from "./FormContext";
 import AuthContext from "./AuthContext";
-// import Foot from "../footer/foot";
 
 const Login = () => {
 	const { formData, updateFormData, resetFormData } = useContext(FormContext);

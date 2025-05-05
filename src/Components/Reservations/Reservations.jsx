@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from "react";
-import AuthContext from "../formulaires/AuthContext";
+import AuthContext from "../Formulaires/AuthContext";
 import "./Reservation.css";
 import { useNavigate } from "react-router-dom";
 
